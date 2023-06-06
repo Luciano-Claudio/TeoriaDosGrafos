@@ -29,15 +29,12 @@ int main() {
     if(ChecarEscolha(escolha) == 1){
         for(int i=0;i<tamGrafo;i++){
             for(int j=0;j<tamGrafo;j++){
-                if(i == j){
+                if(i == j)
                     printf("\n\t\tQuantos lacos o vertice %d tem? ",i);
-                    scanf("%d", &matGrafos[i][j]);
-                    
-                }
-                else{
+                else
                     printf("\n\t\tQuantas arestas o vertice %d tem apontando para o vertice %d? ",i,j);
-                    scanf("%d", &matGrafos[i][j]);
-                }
+                
+                scanf("%d", &matGrafos[i][j]);
             }
         }
         
@@ -53,14 +50,11 @@ int main() {
     else{
         for(int i=0;i<tamGrafo;i++){
             for(int j=i;j<tamGrafo;j++){
-                if(i == j){
+                if(i == j)
                     printf("\n\t\tQuantos lacos o vertice %d tem? ",i);
-                    scanf("%d", &matGrafos[i][j]);
-                }
-                else{
+                else
                     printf("\n\t\tQuantas arestas o vertice %d tem ligando ao vertice %d? ",i,j);
-                    scanf("%d", &matGrafos[i][j]);
-                }
+                scanf("%d", &matGrafos[i][j]);
             }
         }
 
